@@ -1,7 +1,7 @@
 ## i/o
 SAMPLEINFORMATION=/home/edrodri2/Variant-Calling-Data/reads/HgG0.lowcoverage.chr2.sampleinfo
 OUTPUTDIR=/home/edrodri2/Variant-Calling-Data/output/
-TMPDIR=/home/edrodri2/Variant-Calling-Data/tmp/
+TMPDIR=/tmp/Variant-Calling-Data/
 SCRIPTDIR=/home/edrodri2/Swift-Variant-Calling/
 EMAIL=aeahmed@life.illinois.edu
 REPORTTICKET=5747
@@ -15,7 +15,6 @@ INPUTFORMAT=FASTQ
 PAIRED=1
 READLENGTH=100
 MULTISAMPLE=NO
-PROVENANCE=
 SAMPLEID=synthetic
 SAMPLELB=synthetic
 SAMPLEPL=illumina
@@ -62,7 +61,6 @@ FASTQCDIR=/home/apps/fastqc/fastqc-0.11.4
 DELIVERYFOLDER=delivery
 
 ## pbs resources
-PBSPROJECTID=
 PBSNODES=1
 PBSCORES=2
 PBSQUEUE=default
