@@ -31,7 +31,7 @@ MARKDUPLICATESTOOL=PICARD
 BWAMEMPARAMS=-k 32 -I 300,30
 CHRNAMES=chr1
 #% I really only need that for the playful dataset. later separate by :
-BWAINDEX=/home1/04212/edrodri2/Variant-Calling-Data/genome/human
+BWAINDEX=/home1/04212/edrodri2/Variant-Calling-Data/
 
 ## Quality thresholds:
 MAP_CUTOFF=95
