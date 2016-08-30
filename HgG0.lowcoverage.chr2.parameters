@@ -1,5 +1,5 @@
 ## i/o
-SAMPLEINFORMATION=/home1/04212/edrodri2/HgG0.lowcoverage.chr2.sampleinfo
+SAMPLEINFORMATION=/home1/04212/edrodri2/Swift-Variant-Calling/HgG0.lowcoverage.chr2.sampleinfo
 OUTPUTDIR=/home1/04212/edrodri2/Variant-Calling-Data/output/
 TMPDIR=/tmp/edrodri2/Variant-Calling-Data/
 SCRIPTDIR=/home1/04212/edrodri2/Swift-Variant-Calling/
