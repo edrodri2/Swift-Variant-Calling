@@ -16,6 +16,23 @@ app (file output) samtools(file inputFile, int thr){
 #	 novosort "--index" "--tmpdir" tempDir "--threads" threads input stdout=filename(output);
 #}
 
+#app (file output) samblaster(string samblasterdir, string inputFilename){
+#	samblasterdir "-M" inputFilename stdout=output;
+#}
+
+#app (file output) samtools_view(string samtoolsdir, file inputFilename, int thr, string u){
+#	samtoolsdir "view" "-@" thr "-bS" u inputFilename @stdout=output;
+#}
+
+#app (file output) samtools_flagstat(string samtoolsdir, string inputFilename){
+#	samtoolsdir "flagstat" inputFilename stdout=output;
+#}
+
+#app () samtools_index(string samtoolsdir, string inputFilename) {
+#	samtoolsdir "index" inputFilename
+#}
+
+
 # Reading the runfile parameters:
 (string[string] data) getConfigVariables(string lines[])
 {
