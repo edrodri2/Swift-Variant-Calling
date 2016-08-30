@@ -1,7 +1,7 @@
 # Variant Calling Workflow in Swift #
 ## Problem statement ##
 
-Want a reasonably flexible variant calling workflow with the following features:
+Our goal is to create a reasonably flexible variant calling workflow in swift with the following features:
 
 1. Able to run on multiple clusters, so we could support work with different collaborators, such as
   1. mForge - OGE - Mayo
@@ -28,4 +28,4 @@ The current Bash-based workflow has all of the above, except for the ability to 
 Also, it is difficult to maintain, such that introducing new features is very laborious.
 Documentation is equally difficult. Those are the factors that drove us to explore Swift as a replacement for Bash glue.
 ## Usage ##
-TODO: Write usage instructions
+In order to run our workflow
