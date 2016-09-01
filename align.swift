@@ -1,3 +1,8 @@
+# Run this file by typing:
+# swift -ui http:8000 align.swift swift.config -params=HgG0.lowcoverage.chr2o.parameters
+# In the current form, this only performs the minimal alignment task. To have more options (choose between aligners, marking duplicates toos, ...,) please refer to the Swift/T code in the other branch!
+
+
 type file;
 
 #################### Pipeline functions definition
@@ -34,21 +39,18 @@ app (file output) samtools(file inputFile, int thr){
 
 
 # Reading the runfile parameters:
-(string[string] data) getConfigVariables(string lines[])
-{
-        foreach line in lines
-        {
-								if(strstr(line, "=") != -1)
-								{
+(string[string] data) getConfigVariables(string lines[]) {
+        foreach line in lines {
+		if(strstr(line, "=") != -1) {
 	                string keyValuePair[] = strsplit(line, "=");
 	                string name = keyValuePair[0];
 	                string value = keyValuePair[1];
 	                data[name] = value;
-								}
+			}
         }
 }
 
-string parametersFilename = arg("params", "runfile");
+string parametersFilename = arg("params");
 file configFile<SingleFileMapper; file=parametersFilename>;
 
 string configFileLines[] = readData(filename(configFile));
